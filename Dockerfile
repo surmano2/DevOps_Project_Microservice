@@ -9,7 +9,8 @@ COPY mvnw mvnw
 COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
-
+RUN sed -i 's/\r$//' mvnw
+RUN chmod +x mvnw
 RUN ./mvnw package -DskipTests
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
