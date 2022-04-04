@@ -5,7 +5,7 @@ LABEL maintainer="m.romdhani@businesstraining.be"
 
 WORKDIR /workspace/app
 
-COPY mvnw .
+COPY mvnw mvnw
 COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
