@@ -64,3 +64,5 @@ hs_err_pid*
 # .idea/modules.xml
 # .idea/*.iml
 # .idea/module
+
+k8s/
